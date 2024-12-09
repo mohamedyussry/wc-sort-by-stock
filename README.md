@@ -14,6 +14,9 @@ This plugin adds new sorting options to your WooCommerce shop page that allows c
 - Seamlessly integrates with existing WooCommerce sorting options
 - New sorting options are always placed at the end of the sorting dropdown
 
+## Screenshot
+![Sort by Stock Screenshot](screenshot.png)
+
 ## Requirements
 
 - WordPress 5.0 or higher
