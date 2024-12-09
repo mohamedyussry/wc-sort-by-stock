@@ -1,46 +1,49 @@
-# ترتيب المنتجات حسب المخزون
+# WooCommerce Sort by Stock
 
-إضافة لـ WordPress تتيح ترتيب منتجات WooCommerce حسب كمية المخزون المتوفرة.
+A WordPress plugin that adds the ability to sort WooCommerce products by their stock quantity. The plugin provides Arabic interface for better user experience.
 
-## الوصف
+## Description
 
-تضيف هذه الإضافة خيارات ترتيب جديدة لصفحة المتجر في WooCommerce تسمح للعملاء بترتيب المنتجات حسب كمية المخزون المتوفرة. يمكن ترتيب المنتجات تصاعدياً أو تنازلياً.
+This plugin adds new sorting options to your WooCommerce shop page that allows customers to sort products based on their available stock quantity. Products can be sorted in both ascending and descending order.
 
-## المميزات
+## Features
 
-- إضافة خيارين جديدين لترتيب المنتجات في WooCommerce:
-  - "ترتيب حسب المخزون: من الأعلى للأقل" - يعرض المنتجات ذات المخزون الأعلى أولاً
-  - "ترتيب حسب المخزون: من الأقل للأعلى" - يعرض المنتجات ذات المخزون الأقل أولاً
-- تتكامل بسلاسة مع خيارات الترتيب الموجودة في WooCommerce
-- خيارات الترتيب الجديدة تظهر دائماً في نهاية قائمة خيارات الترتيب
+- Adds two new sorting options to WooCommerce product sorting dropdown:
+  - "Sort by stock: High to Low" - Shows products with highest stock first
+  - "Sort by stock: Low to High" - Shows products with lowest stock first
+- Seamlessly integrates with existing WooCommerce sorting options
+- New sorting options are always placed at the end of the sorting dropdown
+- Full Arabic interface support
 
-## لقطة شاشة
-![لقطة شاشة لترتيب المخزون](screenshot.png)
+## Screenshot
+![Sort by Stock Screenshot](screenshot.png)
 
-## المتطلبات
+## Requirements
 
-- WordPress 5.0 أو أحدث
-- WooCommerce 3.0 أو أحدث
-- PHP 7.2 أو أحدث
+- WordPress 5.0 or higher
+- WooCommerce 3.0 or higher
+- PHP 7.2 or higher
 
-## التثبيت
+## Installation
 
-1. قم بتحميل ملف الإضافة المضغوط
-2. انتقل إلى لوحة تحكم WordPress وقم بزيارة الإضافات ← إضافة جديدة
-3. انقر على زر "رفع إضافة" في الأعلى
-4. قم برفع الملف المضغوط والنقر على "تثبيت الآن"
-5. بعد التثبيت، انقر على "تفعيل"
+1. Download the plugin zip file
+2. Go to WordPress admin area and visit Plugins → Add New
+3. Click on the "Upload Plugin" button at the top
+4. Upload the zip file and click on "Install Now"
+5. Once installed, click on "Activate"
 
-## الاستخدام
+## Usage
 
-بمجرد التفعيل، تضيف الإضافة تلقائياً خيارين جديدين لصفحة المتجر. يمكن للعملاء اختيار:
-- "ترتيب حسب المخزون: من الأعلى للأقل" لرؤية المنتجات ذات المخزون الأعلى أولاً
-- "ترتيب حسب المخزون: من الأقل للأعلى" لرؤية المنتجات ذات المخزون الأقل أولاً
+Once activated, the plugin automatically adds two new sorting options to your shop page. Customers can select either:
+- "Sort by stock: High to Low" to see products with highest stock first
+- "Sort by stock: Low to High" to see products with lowest stock first
 
-## المطور
+The sorting options are displayed in Arabic for better user experience in Arabic websites.
+
+## Author
 
 - [Mohamed Yussry](https://github.com/mohamedyussry)
 
-## الترخيص
+## License
 
-هذا المشروع مرخص تحت GPL v2 أو أحدث
+This project is licensed under the GPL v2 or later
