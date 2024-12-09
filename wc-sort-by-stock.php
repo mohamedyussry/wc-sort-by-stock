@@ -21,20 +21,43 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
     return;
 }
 
-// Add new sorting option to WooCommerce
-function add_stock_quantity_sorting_option($sorting_options) {
-    $sorting_options['stock_quantity'] = __('Sort by stock quantity', 'wc-sort-by-stock');
-    return $sorting_options;
+// Add new sorting options to WooCommerce
+function add_stock_quantity_sorting_options($sorting_options) {
+    $new_options = array(
+        'stock_quantity_desc' => __('Sort by stock: High to Low', 'wc-sort-by-stock'),
+        'stock_quantity_asc' => __('Sort by stock: Low to High', 'wc-sort-by-stock')
+    );
+    
+    // Get the 'menu_order' option if it exists
+    $menu_order = array();
+    if (isset($sorting_options['menu_order'])) {
+        $menu_order = array('menu_order' => $sorting_options['menu_order']);
+        unset($sorting_options['menu_order']);
+    }
+    
+    // Add new options at the end
+    return array_merge(
+        $menu_order,
+        $sorting_options,
+        $new_options
+    );
 }
-add_filter('woocommerce_catalog_orderby', 'add_stock_quantity_sorting_option');
+add_filter('woocommerce_catalog_orderby', 'add_stock_quantity_sorting_options');
 
 // Add new sorting parameters
 function add_stock_quantity_sorting_args($args) {
     if (isset($_GET['orderby'])) {
-        if ('stock_quantity' === $_GET['orderby']) {
-            $args['orderby'] = 'meta_value_num';
-            $args['meta_key'] = '_stock';
-            $args['order'] = 'DESC';
+        switch ($_GET['orderby']) {
+            case 'stock_quantity_desc':
+                $args['orderby'] = 'meta_value_num';
+                $args['meta_key'] = '_stock';
+                $args['order'] = 'DESC';
+                break;
+            case 'stock_quantity_asc':
+                $args['orderby'] = 'meta_value_num';
+                $args['meta_key'] = '_stock';
+                $args['order'] = 'ASC';
+                break;
         }
     }
     return $args;

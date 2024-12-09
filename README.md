@@ -4,13 +4,15 @@ A WordPress plugin that adds the ability to sort WooCommerce products by their s
 
 ## Description
 
-This plugin adds a new sorting option to your WooCommerce shop page that allows customers to sort products based on their available stock quantity. Products with higher stock will appear first.
+This plugin adds new sorting options to your WooCommerce shop page that allows customers to sort products based on their available stock quantity. Products can be sorted in both ascending and descending order.
 
 ## Features
 
-- Adds "Sort by stock quantity" option to WooCommerce product sorting dropdown
+- Adds two new sorting options to WooCommerce product sorting dropdown:
+  - "Sort by stock: High to Low" - Shows products with highest stock first
+  - "Sort by stock: Low to High" - Shows products with lowest stock first
 - Seamlessly integrates with existing WooCommerce sorting options
-- Sorts products from highest to lowest stock quantity
+- New sorting options are always placed at the end of the sorting dropdown
 
 ## Requirements
 
@@ -28,7 +30,9 @@ This plugin adds a new sorting option to your WooCommerce shop page that allows 
 
 ## Usage
 
-Once activated, the plugin automatically adds a new sorting option to your shop page. Customers can select "Sort by stock quantity" from the sorting dropdown to order products based on their available stock.
+Once activated, the plugin automatically adds two new sorting options to your shop page. Customers can select either:
+- "Sort by stock: High to Low" to see products with highest stock first
+- "Sort by stock: Low to High" to see products with lowest stock first
 
 ## Author
 
