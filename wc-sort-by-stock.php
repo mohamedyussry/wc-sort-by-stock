@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: WooCommerce Sort by Stock
+ * Plugin Name: ترتيب المنتجات حسب المخزون
  * Plugin URI: https://github.com/mohamedyussry/wc-sort-by-stock
- * Description: A WooCommerce plugin that adds the ability to sort products by their stock quantity
+ * Description: إضافة خيارات ترتيب المنتجات حسب كمية المخزون المتوفرة في متجر WooCommerce
  * Version: 1.0.0
  * Author: Mohamed Yussry
  * Author URI: https://github.com/mohamedyussry
@@ -24,8 +24,8 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
 // Add new sorting options to WooCommerce
 function add_stock_quantity_sorting_options($sorting_options) {
     $new_options = array(
-        'stock_quantity_desc' => __('Sort by stock: High to Low', 'wc-sort-by-stock'),
-        'stock_quantity_asc' => __('Sort by stock: Low to High', 'wc-sort-by-stock')
+        'stock_quantity_desc' => __('ترتيب حسب المخزون: من الأعلى للأقل', 'wc-sort-by-stock'),
+        'stock_quantity_asc' => __('ترتيب حسب المخزون: من الأقل للأعلى', 'wc-sort-by-stock')
     );
     
     // Get the 'menu_order' option if it exists
